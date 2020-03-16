@@ -1,0 +1,6 @@
+[user]
+	name = Mattia Marchesini
+[core]
+	eol = lf
+[credential "https://github.com"]
+	username = mattiamarchesini
