@@ -19,4 +19,4 @@ export EDITOR=v
 #export TERMINAL=termite
 export TERM=xterm-256color
 export BROWSER=chromium
-
+export LESSHISTFILE="-"
