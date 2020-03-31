@@ -1,5 +1,6 @@
 [user]
 	name = Mattia Marchesini
+	email = mattia.marchesini5@studio.unibo.it
 [core]
 	eol = lf
 [credential "https://github.com"]

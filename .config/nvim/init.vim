@@ -14,9 +14,7 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
 	Plug 'lifepillar/vim-solarized8'
-	Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh', }
 	Plug 'arzg/vim-colors-xcode'
-	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 "===AUTOCOMMANDS===
@@ -34,21 +32,6 @@ au BufwritePost ~/.config/nvim/init.vim source $MYVIMRC
 "autocmd TermOpen * startinsert
 
 au BufHidden * if bufname() == "" && &modified == 0 | bdelete | endif
-
-"===LANGUAGE SERVER===
-"Automatically start language servers
-let g:LanguageClient_autoStart = 1
-let g:deoplete#enable_at_startup = 1
-
-"configuration
-set hidden			"required for operations modifying multiple buffers like rename.
-"let g:LanguageClient_serverCommands = {}
-"let g:LanguageClient_serverCommands.java = ['java']
-"au FileType java setlocal omnifunc=LanguageClient#complete
-let g:LanguageClient_serverCommands = {
-    \'python' : ['/usr/bin/pyls'],
-    \ }
-au FileType python setlocal omnifunc=LanguageClient#complete
 
 "===COLORS===
 set termguicolors
