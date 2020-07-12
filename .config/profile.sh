@@ -18,5 +18,5 @@ export LANG=it_IT.UTF-8
 export EDITOR=v
 #export TERMINAL=termite
 export TERM=xterm-256color
-export BROWSER=chromium
+#export BROWSER=chromium
 export LESSHISTFILE="-"
